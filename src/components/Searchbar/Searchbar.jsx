@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import { ReactComponent as SearchIcon } from './search.svg';
 import {
   SearchbarHeader,
   SearchForm,
   SearchButton,
-  SearchButtonLabel,
+  // SearchButtonLabel,
   SearchFormInput,
 } from './Searchbar.styled.jsx';
 
@@ -35,7 +36,8 @@ const Searchbar = ({ onSubmit }) => {
           onChange={handleInput}
         />
         <SearchButton type="submit">
-          <SearchButtonLabel>Search</SearchButtonLabel>
+          <SearchIcon width="22" height="22" />
+          {/* <SearchButtonLabel>Search</SearchButtonLabel> */}
         </SearchButton>
       </SearchForm>
     </SearchbarHeader>
