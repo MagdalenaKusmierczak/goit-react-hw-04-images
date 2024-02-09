@@ -5,7 +5,7 @@ import ImageGallery from './ImageGallery/ImageGallery';
 import MoreButton from './Button/Button';
 import Loader from './Loader/Loader';
 import Modal from './Modal/Modal';
-import { AppWrapper } from './App.styled';
+import { AppWrapper } from './App.styled.jsx';
 export const App = () => {
   //Declaration
   const [inputValue, setInputValue] = useState('');

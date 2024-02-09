@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { ModalWrapper,Overlay } from './Modal.styled';
+import { ModalWrapper,Overlay } from './Modal.styled.jsx';
 const Modal = ({ largeImageURL, tags, onClose }) => {
   return (
     <Overlay onClick={onClose}>

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import {
   ImageGalleryLi,
   ImageGalleryItemImg,
-} from './ImageGalleryItem.styled';
+} from './ImageGalleryItem.styled.jsx';
 
 const ImageGalleryItem = ({ image, onClick }) => {
   return (

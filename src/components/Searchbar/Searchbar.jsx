@@ -6,7 +6,7 @@ import {
   SearchButton,
   SearchButtonLabel,
   SearchFormInput,
-} from './Searchbar.styled';
+} from './Searchbar.styled.jsx';
 
 const Searchbar = ({ onSubmit }) => {
   const [search, setSearch] = useState('');
