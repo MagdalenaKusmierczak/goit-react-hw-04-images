@@ -1,5 +1,12 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import {
+  SearchbarHeader,
+  SearchForm,
+  SearchButton,
+  SearchButtonLabel,
+  SearchFormInput,
+} from './Searchbar.styled';
 
 const Searchbar = ({ onSubmit }) => {
   const [search, setSearch] = useState('');
@@ -15,9 +22,9 @@ const Searchbar = ({ onSubmit }) => {
   };
 
   return (
-    <header className="Searchbar">
-      <form className="SearchForm" onSubmit={handleSubmit}>
-        <input
+    <SearchbarHeader>
+      <SearchForm onSubmit={handleSubmit}>
+        <SearchFormInput
           className="SearchForm-input"
           type="text"
           autoComplete="off"
@@ -28,11 +35,11 @@ const Searchbar = ({ onSubmit }) => {
           value={search}
           onChange={handleInput}
         />
-        <button type="submit" className="SearchForm-button">
-          <span className="SearchForm-button-label">Search</span>
-        </button>
-      </form>
-    </header>
+        <SearchButton type="submit">
+          <SearchButtonLabel>Search</SearchButtonLabel>
+        </SearchButton>
+      </SearchForm>
+    </SearchbarHeader>
   );
 };
 Searchbar.propTypes = {

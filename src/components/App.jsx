@@ -5,7 +5,7 @@ import ImageGallery from './ImageGallery/ImageGallery';
 import MoreButton from './Button/Button';
 import Loader from './Loader/Loader';
 import Modal from './Modal/Modal';
-
+import { AppWrapper } from './App.styled';
 export const App = () => {
   //Declaration
   const [inputValue, setInputValue] = useState('');
@@ -97,7 +97,7 @@ export const App = () => {
     };
   });
   return (
-    <div className="App">
+    <AppWrapper>
       <Searchbar onSubmit={handleSubmit} />
       {images.length > 0 && (
         <ImageGallery imageClick={handleClick} images={images} />
@@ -109,6 +109,6 @@ export const App = () => {
       {isModalOpen ? (
         <Modal largeImageURL={modalImage} tags={modalTags} onClose={onClose} />
       ) : null}
-    </div>
+    </AppWrapper>
   );
 };

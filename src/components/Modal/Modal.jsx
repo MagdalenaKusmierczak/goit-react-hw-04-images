@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-
+import { ModalWrapper,Overlay } from './Modal.styled';
 const Modal = ({ largeImageURL, tags, onClose }) => {
   return (
-    <div className="Overlay" onClick={onClose}>
-      <div className="Modal">
+    <Overlay onClick={onClose}>
+      <ModalWrapper>
         <img src={largeImageURL} alt={tags} />
-      </div>
-    </div>
+      </ModalWrapper>
+    </Overlay>
   );
 };
 
