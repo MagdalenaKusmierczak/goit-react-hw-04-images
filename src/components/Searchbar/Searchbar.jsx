@@ -25,7 +25,6 @@ const Searchbar = ({ onSubmit }) => {
     <SearchbarHeader>
       <SearchForm onSubmit={handleSubmit}>
         <SearchFormInput
-          className="SearchForm-input"
           type="text"
           autoComplete="off"
           autoFocus
